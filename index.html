@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Sound Pad</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .download-section {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .instructions {
+            margin-top: 30px;
+        }
+        pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile Sound Pad</h1>
+    
+    <p>Welcome to the Mobile Sound Pad project! This is a mobile-friendly sound pad application with multi-touch support and visual effects.</p>
+    
+    <div class="download-section">
+        <h2>Download the Project</h2>
+        <p>Due to GitHub file size limitations, the full project with all sound files couldn't be uploaded directly. To use this sound pad, please:</p>
+        <ol>
+            <li>Clone this repository: <code>git clone https://github.com/cawlb/mobile-sound-pad.git</code></li>
+            <li>Download the full source files from the link provided to you</li>
+            <li>Copy the sound files into a folder named <code>sounds</code> in the project directory</li>
+        </ol>
+    </div>
+    
+    <div class="instructions">
+        <h2>Running the Sound Pad</h2>
+        <p>After downloading the files, you can run the sound pad using a simple HTTP server:</p>
+        <pre><code># Using Python 3
+python -m http.server 8000
+
+# Using Python 2
+python -m SimpleHTTPServer 8000
+
+# If you have Node.js
+npx serve</code></pre>
+        
+        <p>Then access the application at:</p>
+        <ul>
+            <li>On your computer: <a href="http://localhost:8000/soundpad.html">http://localhost:8000/soundpad.html</a></li>
+            <li>On your mobile device: <code>http://YOUR_LOCAL_IP:8000/soundpad.html</code> (replace YOUR_LOCAL_IP with your computer's local IP address)</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h2>Features</h2>
+        <ul>
+            <li>Simple, clean white grid interface</li>
+            <li>Multi-touch support for playing multiple sounds simultaneously</li>
+            <li>Sliding/swiping functionality across multiple pads</li>
+            <li>Full-screen visual effects that react to sounds</li>
+            <li>Different shapes and colors for each sound type</li>
+            <li>Visuals overlap when multiple sounds are played</li>
+        </ul>
+    </div>
+    
+    <p>For more details, please see the <a href="https://github.com/cawlb/mobile-sound-pad/blob/main/README.md">README</a>.</p>
+</body>
+</html>
